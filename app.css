@@ -1,0 +1,142 @@
+.metro-interactive{
+	position:relative;
+}
+
+.metro-interactive *{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	line-height:1.6em;	
+}
+
+.metro-interactive.makesans, .metro-interactive .makesans{
+	font-family: franklin-gothic-urw,helvetica,sans-serif;
+}
+
+.metro-interactive p{
+	margin:1em 0em;
+}
+.metro-interactive h1{
+	font-size:2em;
+	font-weight:bold;
+	margin: 0.6em 0em;
+}
+.metro-interactive h2{
+	font-size:1.5em;
+	font-weight:bold;
+	margin: 0.8em 0em;
+}
+.metro-interactive b{
+	font-weight:bold;
+}
+.metro-interactive ul{
+	list-style-type:disc;
+	padding:0em 0em 0em 2.25em;
+}
+
+.mm-section{
+	margin:0em 0em 1em 0em;
+	padding:1em 0em;
+	border:0px solid #aaaaaa;
+	border-width:0px 0px 0px 0px;
+}
+
+/*clearfix this class*/
+.c-fix:after{content:""; display:table; clear:both;}
+
+.metro-interactive svg{
+	width:100%;
+	height:100%;
+}
+
+.disable-highlight, .disable-highlight p, svg text{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;           
+}
+
+div.category-icon{
+	float:left;
+	width:60px;
+	height:80px;
+	margin:0em 1em 1em 0em;
+}
+
+div.reading{
+	max-width:780px;
+}
+.reading, .reading > *{
+	line-height:1.6em;
+}
+
+.content-box{
+	position:relative;
+	margin:0px auto;
+	max-width:1200px;
+	width:100%;
+	padding:1em;
+}
+
+p:first-child > strong{
+	font-size:1.25em;
+	font-weight:bold;
+}
+
+.as-table{
+	display:table;
+	margin:0em 0em 3em -1em;
+	border-spacing:1em 0em;
+	width: 100%;
+	width: calc(100% + 2em);
+}
+.row-of{display:table-row;}
+
+.row-of > div *{
+	padding:0em;
+	margin:0em 0em 1em 0em;
+}
+.row-of > div *:first-child{margin-top: 0em;}
+.row-of > div{
+	display:table-cell;
+	vertical-align:top;
+	padding:1em 1em 1em 1em;
+	height:100%;
+	border-top:1px solid red;
+	line-height:1.6em;
+}
+.row-of > div:first-child{
+	margin-left:0%;
+}
+
+div.category-icon{
+	float:left;
+	width:60px;
+	height:60px;
+	margin:0em 1em 1em 0em;
+}
+
+@media (min-width:0px){
+	.row-of > div{
+		display:block;
+		width:auto;
+		margin:0em 0em 1em 0em;
+	}
+}
+
+@media (min-width:640px){
+	.row-of > div{
+		display:table-cell;
+		margin:0em;
+	}
+	.row-of.four-cells > div{
+		width:25%;
+	}
+
+}
+
+@media (min-width:1200px){
+
+}
+

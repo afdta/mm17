@@ -1,0 +1,233 @@
+<!--FIX INITIAL VIEW-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="app.css">
+</head>
+
+<body style="min-height:1000px;margin:0px;">
+
+<script src="app.js" type="text/javascript"></script>
+
+<h1 style="border-bottom:5px solid red;padding:5px">Metro Monitor 2017</h1>
+
+<div id="mm-wrap" class="metro-interactive">
+
+	<div style="right:0px; position:fixed;height:100px;width:250px;border:0px solid #333333;padding:0px 1em;background-color:rgba(160,160,160,.8);z-index:100;">
+		<p>A fixed navigation element. Potentially provide time period toggle here.</p>
+	</div>
+	<div style="height:100px;width:100%;background-color:#dddddd;">
+	</div>
+
+	<div id="mm-section-1" class="mm-section">
+		<div class="content-box">
+			<div class="reading">
+				<h2>The Metro Monitor provides a comprehensive framework for measuring successful economic outcomes in metropolitan America.</h2>
+
+				<p>The Monitor benchmarks regional economies on economic growth, prosperity, and inclusion and it provides the foundation for a forthcoming series of research aimed at helping leaders understand the factors that affect these facets of the changing economy. The understanding this provides will be useful in the development of new models of economic development that can help deliver an advanced economy that works for all.</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="mm-section-2" class="mm-section">
+		<div class="content-box">
+			<div class="reading">
+				<p><strong>Why growth, prosperity, and inclusion?</strong></p>
+				<p>Make the case for this framework. What does the Monitor include and why? We should especially focus on laying out the logical connection between the categories of focus (e.g. Growth? High/Low quality growth? How are the gains distributed?). I think there is a good case for a static graphic here that focuses on the framework.</p>
+			</div>
+			<div>
+				<div class="as-table">
+					<div class="row-of four-cells">
+						<div>
+							<p><strong>Growth</strong> indicators capture change in the total size of a metropolitan area’s economy. As a metropolitan economy grows, it creates new opportunities for individuals and can become more efficient as it grows larger. Growth indicators capture change in:</p>
+						</div>
+						<div>
+							<p><em>Jobs</em></p>
+							<!--<div class="category-icon">
+								<svg>
+									<path d="M0,60 l60,-60" fill="none" stroke="red"></path>
+								</svg>
+							</div>-->
+							<p>Total full- and part-time jobs. Source: Moody's Analytics</p>
+						</div>
+
+
+
+						<div>
+							<p><em>Output</em></p>
+							<p>Total value of goods and services produced in a metropolitan economy. Source: Moody's Analytics</p>
+						</div>
+
+
+
+						<div>
+							<p><em>Firm births</em></p>
+							<p>New firm starts...</p>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			<div>
+
+				<div class="as-table">
+					<div class="row-of four-cells">
+						<div>
+							<p><strong>Prosperity</strong> refers to the wealth and income produced by an economy on a per-capita or per-worker basis. When a metropolitan area grows by increasing the productivity of its workers, the value of those workers’ labor rises. As the value of labor rises, so can workers’ wages. In this way, prosperity indicators capture the quality of a metropolitan area’s economic growth from the standpoint of its workers and residents. Prosperity indicators capture change in:</p>
+						</div>
+						<div>
+							<p><em>Output per person</em></p>
+							<p>A measure of living standards equal to GMP divided by total population. Source: Moody's Analytics and the U.S. Census Bureau</p>
+						</div>
+
+
+
+						<div>
+							<p><em>Output per job</em></p>
+							<p>A measure of productivity equal to GMP divided by total jobs. Source: Moody's Analytics</p>
+						</div>
+
+
+
+						<div>
+							<p><em>Average wage</em></p>
+							<p>Aggregate wages divided by total jobs. Source: Moody's Analytics</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div class="as-table">
+					<div class="row-of four-cells">
+							<div>
+								<p><strong>Inclusion</strong> indicators measure how the benefits of growth and prosperity in a metropolitan economy are distributed among people. Inclusive growth enables more people to invest in their skills and to purchase more goods and services. Inclusion indicators capture change in:</p>
+							</div>
+
+							<div>
+								<p><em>Employment to population ratio</em></p>
+								<p>The share of all individuals aged 18 to 65 who are employed. Source: U.S. Census Bureau</p>
+							</div>
+
+
+
+							<div>
+								<p><em>Median wage</em></p>
+								<p>The annual wage earned by the person in the very middle of a metropolitan area's income distribution. Source: U.S. Census Bureau</p>
+							</div>
+
+
+
+							<div>
+								<p><em>Relative poverty</em></p>
+								<p>The share of people in a metropolitan economy who earn less than half of the local median wage. Source: U.S. Census Bureau</p>
+							</div>
+
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>	
+
+	<div class="content-box" style="height:225px;border:1px solid #aaaaaa;margin-bottom:4em;">
+		<p>Metro Monitor toolkit</p>
+		<p>Link out to other Monitor analyses and other MPP products that build off of/add to this framework</p>
+	</div>
+
+	<div id="mm-section-2" class="mm-section">
+		<div class="content-box" style="background-color:#dddddd;">
+			<div class="reading" style="">
+				<p><strong>How do the rankings shake out?</strong></p>
+				<p>Interactive graphic depicting the performances of each metro area... If possible I'd consider combining with the above section.</p>
+				<p>The graphic below was a sketch from a previous effort. The final graphic here might look like this, but it will not present the indexes as a cumulative measure (i.e. one huge stacked bar). Each index will be presented separately so the user can see who scored high on each dimension. This will be sortable and may be coupled with an alternative, straightforward table view of the data.</p>
+			</div>
+			<div id="rankings-chart"></div>
+			<div class="c-fix">
+				<p><strong>Correlates of growth, prosperity, and inclusion</strong></p>
+				<p><a href="https://en.wikipedia.org/wiki/Small_multiple">Small multiples</a> that convey important relationships we want to call out. The most obvious candidates here are maps and/or scatter plots featuring industry LQs or other Metro Monitor metrics (e.g. job growth vs firm growth, etc.). Obviously limited to where there are meaningful takeaways.</p>
+				<div style="float:left;height:150px;width:19%;margin:1em;background:#aaaaaa;"></div>
+				<div style="float:left;height:150px;width:19%;margin:1em;background:#aaaaaa;"></div>
+				<div style="float:left;height:150px;width:19%;margin:1em;background:#aaaaaa;"></div>
+				<div style="float:left;height:150px;width:19%;margin:1em;background:#aaaaaa;"></div>
+				<div style="float:left;height:150px;width:19%;margin:1em;background:#aaaaaa;"></div>
+				<div style="float:left;height:150px;width:19%;margin:1em;background:#aaaaaa;"></div>
+				<div style="float:left;height:150px;width:19%;margin:1em;background:#aaaaaa;"></div>
+				<p style="clear:both;">Some discussion ...</p>
+				<div style="float:left;height:150px;width:19%;margin:1em;background:#aaaaaa;"></div>
+				<div style="float:left;height:150px;width:19%;margin:1em;background:#aaaaaa;"></div>
+				<div style="float:left;height:150px;width:19%;margin:1em;background:#aaaaaa;"></div>
+				<div style="float:left;height:150px;width:19%;margin:1em;background:#aaaaaa;"></div>
+				<div style="float:left;height:150px;width:19%;margin:1em;background:#aaaaaa;"></div>
+				<div style="float:left;height:150px;width:19%;margin:1em;background:#aaaaaa;"></div>
+				<p style="clear:both;">Some discussion ...</p>
+				<div style="float:left;height:150px;width:19%;margin:1em;background:#aaaaaa;"></div>
+				<div style="float:left;height:150px;width:19%;margin:1em;background:#aaaaaa;"></div>
+				<div style="float:left;height:150px;width:19%;margin:1em;background:#aaaaaa;"></div>
+				<div style="float:left;height:150px;width:19%;margin:1em;background:#aaaaaa;"></div>
+				<div style="float:left;height:150px;width:19%;margin:1em;background:#aaaaaa;"></div>
+				<div style="float:left;height:150px;width:19%;margin:1em;background:#aaaaaa;"></div>
+			</div>
+		</div>
+	</div>
+			
+
+	<div id="mm-section-3" class="mm-section">
+		<div class="content-box">
+			<div class="reading">
+				<p><strong>Growth, prosperity, and inclusion often do not go hand-in-hand</strong></p>
+				<p>The chart below depicts the combined z-scores of all metros on growth, prosperity, and inclusion (in that order). The dark lines connect the metro areas that perform above average on all three. The chart will default to this view of the data, but the user can also interact with it to see how other metro areas throughout the three distributions fared. We can also set other views that the user could toggle through (e.g. top 20 on growth).</p>
+				<p>The other alternative I've considered here is a series of maps that the user would scroll through, starting with above average growth, then above average growth and prosperity, and finally above average on all three. This would allow the user to see how places "drop off" the map as you consider each category. The map would stay fixed on the screen and text annotating each map would scroll over it (<a href="http://www.nytimes.com/interactive/2016/11/08/us/elections/how-trump-pushed-the-election-map-to-the-right.html" target="_blank">example)</a>.</p>
+			</div>
+			<div id="slope-chart"></div>
+		</div>
+	</div>	
+
+
+	<div id="mm-section-4" class="mm-section">
+		<div class="content-box" style="background-color:#dddddd;height:680px">
+			<div class="reading">
+				<p><strong>A regional economy may be inclusive in the broad sense. But some groups still get left behind.</strong></p>
+				<p>Discuss inclusion by race (and education?) here. Graphics and trends discussed here are high-level, cross-sectional trends.</p>
+			</div>
+		</div>
+	</div>	
+
+	<div id="mm-section-5" class="mm-section">
+		<div class="content-box" style=";height:1280px">
+			<div">
+				<p><strong>Metro area profiles</strong></p>
+				<p>Detailed metro data goes here focusing on values and position within the metro area distribution. We will make printable versions of these available.</p>
+				<p>Four sections:</p>
+				<div style="background:#e0e0e0;padding:1em;margin-top:1em;">
+					<p>Overall ranks</p>
+				</div>
+
+				<div style="background:#e0e0e0;padding:1em;margin-top:1em">
+					<p>Growth</p>
+					<p>Section is expandable to include shift-share decomposition</p>
+				</div>
+
+				<div style="background:#e0e0e0;padding:1em;margin-top:1em">
+					<p>Prosperity</p>
+				</div>
+
+				<div style="background:#e0e0e0;padding:1em;margin-top:1em">
+					<p>Inclusion</p>
+					<p>Section is expandable to include inclusion by race (and education?).
+				</div>
+			</div>
+		</div>
+	</div>	
+	
+</div>
+
+</body>
+</html>
